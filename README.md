@@ -1,4 +1,4 @@
-# Logistics Operations Analysis
+## Logistics Operations Analysis
 
 End-to-end data analysis project using SQL and Python to evaluate driver performance, trip efficiency, and operational metrics. The project includes data preparation, analysis, and a Power BI dashboard for interactive exploration.
 
@@ -6,44 +6,57 @@ End-to-end data analysis project using SQL and Python to evaluate driver perform
 
 ## Project Overview
 
-This project analyzes logistics operations data to identify performance patterns across drivers, terminals, and routes. The goal is to understand workload distribution, efficiency consistency, and operational trends.
+This project analyzes logistics operations data to identify inefficiencies in driver performance, workload distribution, and operational consistency across terminals and routes.
 
-Data was extracted, cleaned, and transformed using Python (pandas) and SQL (DuckDB) in a Jupyter Notebook, then visualized in Power BI.
+The goal was to move beyond basic reporting to uncover patterns in efficiency and performance that could support better resource allocation and operational decision-making.
+
+Data was extracted, cleaned, and transformed using Python (`pandas`) and SQL (`DuckDB`) in a Jupyter Notebook, then visualized in Power BI.
 
 ---
 
 ## Key Insights
 
-- Driver efficiency is consistent across experience levels, indicating standardized processes
-- Terminal performance varies in total workload, but efficiency remains tightly clustered
-- Fuel usage scales predictably with distance, validating data consistency and operational stability
+- Driver efficiency remained consistent across experience levels, suggesting performance is driven more by system design and process standardization than individual variation
+- Terminal workload varied significantly, but efficiency remained tightly clustered, indicating potential opportunities to rebalance workload without impacting performance
+- Fuel usage scaled predictably with distance, validating data integrity and enabling reliable performance comparisons across trips
+
+---
+
+## Operational Opportunities (Recommendations)
+
+- Rebalance workload across terminals to improve capacity utilization without negatively impacting efficiency
+- Investigate process or routing design as primary drivers of performance rather than focusing on individual driver optimization
+- Use validated fuel and distance relationships to support benchmarking and identify outlier routes or inefficiencies
 
 ---
 
 ## Tools Used
 
-- Python (pandas)
-- SQL (DuckDB)
-- Jupyter Notebook
-- Power BI
+- **Python** (`pandas`)
+- **SQL** (`DuckDB`)
+- **Jupyter Notebook**
+- **Power BI**
 
 ---
 
 ## Data Source
 
-Dataset: Logistics Operations Database (Kaggle)
+- **Dataset:** Logistics Operations Database (Kaggle)
 
 ---
 
 ## How to Run (Notebook)
 
 1. Install dependencies:
-   pip install kagglehub pandas duckdb
+
+```bash
+pip install kagglehub pandas duckdb
+```
 
 2. Open the notebook in the `/notebooks` folder
 
-3. Run all cells:
-   The dataset will download automatically using kagglehub
+3. Run all cells  
+   The dataset will download automatically using `kagglehub`
 
 ---
 
@@ -53,11 +66,12 @@ The Power BI dashboard is built using a processed dataset located in the `/data`
 
 To view the dashboard:
 
-1. Download the repository
-2. Open the Power BI file in the `/dashboard` folder
+1. Download the repository  
+2. Open the Power BI file in the `/dashboard` folder  
 3. If prompted, update the data source to point to the local CSV file in `/data`
 
-The dataset was prepared using SQL and Python and represents a filtered one-year subset of the original data.
+**Note:**  
+The dataset represents a filtered one-year subset prepared using SQL and Python.
 
 ---
 
@@ -66,4 +80,4 @@ The dataset was prepared using SQL and Python and represents a filtered one-year
 - `/notebooks` → Data extraction, cleaning, and transformation  
 - `/data` → Final dataset used for analysis and dashboard  
 - `/dashboard` → Power BI dashboard file  
-- `README.md` → Project overview and instructions
+- `README.md` → Project overview and instructions  
